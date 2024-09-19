@@ -1,0 +1,297 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.navigacija{
+    width:100%;
+    height:90px;
+    background-color: #224D17;
+    display:flex;
+    position:fixed;
+    z-index:1;
+}
+
+.logo{
+    width:7%;
+    height:90px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#main-nav{
+    width:97%;
+    height:90px;
+    font-size: 25px;
+    padding:0px 50px 0px 600px;
+}
+
+#main-nav a{
+    color:#D9DF1D;
+    background-color: #224D17;
+    height:90px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:none;
+    width:100%;
+    font-weight: 700;
+}
+
+#main-nav a:hover{
+    background-color: rgba(221,226,52,0.8);
+    color:#224D17;
+
+    
+}
+#main-nav ul{
+    list-style-type:none;
+    display:flex;
+
+}
+#main-nav li{
+    width:100%;
+    text-align:center;
+    position: relative;
+}
+.opadajuci-meni{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    width:100%;
+    font-size:20px;
+}
+
+.opadajuci-meni li{
+    display:none;
+    
+    
+}
+#main-nav li:hover .opadajuci-meni > li {
+    display:flex;
+    background-color: rgba(221,226,52,0.5);
+}
+
+.container{
+    width:100%;
+    background-color: #224D17;
+   
+    
+}
+
+
+.gornja-slika{
+    width:100%;
+    height:600px;
+    background-image: url(../img/jelo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 0px 0px 150px;
+}
+.kartica{
+    height:600px;
+    width:400px;
+    background-color: rgba(221,226,52,0.8);
+    color:white;
+    padding:350px 0px 0px 110px;
+
+
+}
+
+.kartica h1{
+    font-size:60px;
+    font-weight: bolder;
+   
+    
+    
+}
+
+.donja-sekcija{
+    width:100%;
+    height:600px;
+    background-color:  #D9DF1D;
+    margin-top:10px;
+    display:flex;
+    padding:0px 100px;
+}
+.forma{
+    width:60%;
+    height:100%;
+    
+    color: #224D17;
+    
+    
+    
+
+}
+.slike-desno{
+    width:40%;
+    height: 100%;
+}
+.sls{
+    position:relative;
+}
+
+.slideshow-img{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    opacity:0;
+    transition: opacity 1s ease-in-out;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    flex-wrap: wrap;
+    padding-left:20px;
+    
+    
+   
+}
+
+.prva{
+    width:400px;
+    margin-bottom:30px;
+    padding-left: 20px;
+    height:40px;
+    background-color: rgba(221,226,52,0.8);
+    
+}
+.druga{
+    width:400px;
+    margin-bottom:30px;
+    height:40px;
+    padding-left: 20px;
+    background-color: rgba(221,226,52,0.8);
+    
+}
+.treca{
+    width:400px;
+    margin-bottom:30px;
+    height:40px;
+    padding-left: 20px;
+    background-color: rgba(221,226,52,0.8);
+}
+.cetvrta{
+    width:400px;
+    margin-bottom:30px;
+    height:100px;
+    padding-left: 20px;
+    padding-bottom: 55px;
+    background-color: rgba(221,226,52,0.8);
+}
+::placeholder { 
+    color: #224D17;
+    font-weight: bold;
+    
+  }
+.zeleni{
+    background-color: #224D17;
+    width:60px;
+    height:2px;
+    margin-top:10px;
+    margin-bottom:50px;
+    margin-left:20px;
+}
+.forma h1{
+    font-size:50px;
+    font-weight: 600;
+    margin-top:5px;
+    
+    padding-left: 20px;
+}
+.forma h2{
+    margin-top:25px;
+    color: #224D17;
+    opacity: 0.8;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding-top:20px;
+    padding-left: 20px;
+    
+}
+.button{
+    color:#224D17;
+    border:2px solid #224D17;
+    width:120px;
+    height:40px;
+    text-align:center;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size:12px;
+    margin-left:20px;
+    font-weight: bolder;
+}
+
+.informacije{
+    width:100%;
+    height:400px;
+    display:flex;
+    justify-content: space-evenly;
+    color:#D9DF1D;
+    background-color: #224D17;
+}
+.radno-vreme{
+    width:33.3333333333%;
+    height:100%;
+    
+}
+.kontakt-informacije{
+    width:33.3333333333%;
+    height:100%;
+    
+}
+.drustvene-mreze{
+    width:33.3333333333%;
+    height:100%;
+    
+}
+
+.naslov{
+    font-size:25px;
+    font-weight:900;
+    padding-bottom: 10px;
+}
+
+.podnaslov{
+    font-size:20px;
+    font-weight:600;
+    
+}
+.informacije p.podnaslov{
+    margin:0px 0px 10px 0px;
+    
+}
+.najmanji{
+ margin:0px 0px 15px 0px;
+ font-size:15px;
+ 
+}
+
+.pad{
+    padding:50px 0px 0px 100px;
+}
+
+.pad1{
+    padding:50px 100px 0px 40px;
+}
+.ikone i {
+    padding-right:10px;
+}
+.ikone{
+    text-align: center;
+    padding-top:20px;
+    
+}
+.boja{
+    color:#D9DF1D;
+}
